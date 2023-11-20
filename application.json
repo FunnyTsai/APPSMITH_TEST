@@ -15,6 +15,10 @@
     {
       "id": "Dbo.A_VOTE_H_TEST",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "viewMode": false,
