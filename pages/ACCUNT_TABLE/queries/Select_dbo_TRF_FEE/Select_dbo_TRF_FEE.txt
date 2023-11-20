@@ -1,0 +1,10 @@
+SELECT
+  DISTINCT 
+    CASE 
+      WHEN TRF_FEE = 'PSR001' THEN '交通津貼_業務代表'
+      WHEN TRF_FEE = 'PSR005' THEN '交通津貼_主任'
+		END TRF_FEE
+FROM
+  dbo.USERS_TEST
+WHERE
+  TRF_FEE LIKE '%{{TRF_Select2.filterText}}%'

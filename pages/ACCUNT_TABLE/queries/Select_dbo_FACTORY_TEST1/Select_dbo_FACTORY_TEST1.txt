@@ -1,0 +1,6 @@
+SELECT
+  CONCAT(Fac_Code, ' ', Fac_Name) AS Fac_Code_Name
+FROM
+  dbo.FACTORY_TEST
+WHERE
+  Fac_Code LIKE '%{{ORG_Select2.filterText}}%' OR Fac_Name LIKE '%{{ORG_Select2.filterText}}%'

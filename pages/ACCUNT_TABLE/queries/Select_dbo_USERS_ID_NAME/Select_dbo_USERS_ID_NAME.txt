@@ -1,0 +1,6 @@
+SELECT
+  CONCAT(USER_ID, ' ', USER_NAME) AS USER_ID_NAME
+FROM
+  dbo.USERS_TEST
+WHERE
+  USER_ID LIKE '%{{Select2CopyCopy.filterText}}%' OR USER_NAME LIKE '%{{Select2CopyCopy.filterText}}%'

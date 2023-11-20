@@ -1,0 +1,11 @@
+SELECT
+ 	DISTINCT 
+	CASE 
+      WHEN ORD_AMT = 'Y' THEN '是'
+      WHEN ORD_AMT = 'N' THEN '否'
+			ELSE ''
+	END	ORD_AMT
+FROM
+  dbo.USERS_TEST
+WHERE
+  ORD_AMT LIKE '%{{Select_ORD_AMT.filterText}}%'

@@ -1,0 +1,71 @@
+{
+    "isCompact": false,
+    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "mobileBottomRow": 29,
+    "widgetName": "salesrep_manager",
+    "configureMenuItems": {
+        "label": "Configure menu items",
+        "id": "config",
+        "config": {
+            "id": "config",
+            "label": "Menu Item",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "dynamicPropertyPathList": [{"key": "isDisabled"}],
+    "displayName": "Menu button",
+    "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
+    "topRow": 6,
+    "bottomRow": 10,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 47,
+    "animateLoading": false,
+    "parentColumnSpace": 14.8564453125,
+    "dynamicTriggerPathList": [{"key": "menuItems.menuItem2.onClick"}],
+    "leftColumn": 1,
+    "dynamicBindingPathList": [{"key": "isDisabled"}],
+    "isDisabled": "{{appsmith.store.LOGIN_USER_INFO.USER_ROLE != 'S'}}",
+    "sourceData": [],
+    "key": "i92ebla1tk",
+    "isDeprecated": false,
+    "rightColumn": 62,
+    "menuVariant": "PRIMARY",
+    "widgetId": "x7mbqcq9ts",
+    "menuItems": {
+        "menuItem3": {
+            "widgetId": "",
+            "index": 1,
+            "label": "業務群組維護",
+            "id": "menuItem3",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem2": {
+            "onClick": "{{navigateTo('ACCUNT_TABLE', {}, 'SAME_WINDOW');}}",
+            "widgetId": "",
+            "index": 0,
+            "iconAlign": "left",
+            "label": "帳號資料",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "isVisible": true,
+    "label": "業務員管理",
+    "version": 1,
+    "parentId": "ltqnl2my9c",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 25,
+    "borderRadius": "0px",
+    "mobileLeftColumn": 31,
+    "menuItemsSource": "STATIC",
+    "menuColor": "#3b82f6",
+    "iconAlign": "left",
+    "placement": "CENTER"
+}

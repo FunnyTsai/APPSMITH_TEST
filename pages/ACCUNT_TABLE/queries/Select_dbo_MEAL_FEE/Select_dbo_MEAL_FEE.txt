@@ -1,0 +1,12 @@
+SELECT
+  DISTINCT 
+    CASE 
+      WHEN MEAL_FEE = 'PSR002' THEN '誤餐津貼_經理'
+      WHEN MEAL_FEE = 'PSR003' THEN '誤餐津貼_業務代表'
+      WHEN MEAL_FEE = 'PSR007' THEN '誤餐津貼_主任'
+      WHEN MEAL_FEE = 'PSR009' THEN '誤餐津貼_不計日當'
+		END MEAL_FEE
+FROM
+  dbo.USERS_TEST
+WHERE
+  MEAL_FEE LIKE '%{{MEAL_Select2.filterText}}%'

@@ -1,0 +1,191 @@
+{
+  "unpublishedPage": {
+    "name": "ACCUNT_TABLE",
+    "slug": "accunt-table",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 910,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 890,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "ACCUNT_TABLE_SelectQuery",
+              "name": "SelectQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.sortOrder.column || 'USER_NAME'",
+                "data_table.sortOrder.order || \"ASC\"",
+                "data_table.pageSize",
+                "data_table.searchText || \"\"",
+                "(data_table.pageNo - 1) * data_table.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "ACCUNT_TABLE_SelectQueryCount",
+              "name": "SelectQueryCount",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_FACTORY_TEST1",
+              "name": "Select_dbo_FACTORY_TEST1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "ORG_Select2.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_MEAL_FEE",
+              "name": "Select_dbo_MEAL_FEE",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "MEAL_Select2.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_TEAM",
+              "name": "Select_dbo_TEAM",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select2Copy.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_TRF_FEE",
+              "name": "Select_dbo_TRF_FEE",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "TRF_Select2.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_USERS_ID_NAME",
+              "name": "Select_dbo_USERS_ID_NAME",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select2CopyCopy.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_USERS_TEST1",
+              "name": "Select_dbo_USERS_TEST1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select2.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_USER_GROUP",
+              "name": "Select_dbo_USER_GROUP",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select_USER_GROUP.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_USER_ORD",
+              "name": "Select_dbo_USER_ORD",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select_ORD_AMT.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_USER_ROLE",
+              "name": "Select_dbo_USER_ROLE",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select_USER_ROLE.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_USER_SCHEDULE",
+              "name": "Select_dbo_USER_SCHEDULE",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select_USER_SCHEDULE.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_Select_dbo_USER_ZONE",
+              "name": "Select_dbo_USER_ZONE",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select_USER_ZONE.filterText"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ACCUNT_TABLE_TRANS_COLLECTOR",
+              "name": "TRANS_COLLECTOR",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                " appsmith.store.COLLECTOR_ID "
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "ACCUNT_TABLE",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "654b76736a770129ec91d063_654c6fbf6a770129ec91d09f"
+}

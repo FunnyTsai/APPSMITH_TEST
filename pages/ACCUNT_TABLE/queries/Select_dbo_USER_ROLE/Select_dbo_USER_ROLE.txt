@@ -1,0 +1,21 @@
+SELECT DISTINCT 
+  --CONCAT(USER_ROLE, ' - ', 
+    CASE 
+      WHEN USER_ROLE = 'S' THEN '系統管理員'
+      WHEN USER_ROLE = 'A' THEN '助理'
+      WHEN USER_ROLE = 'B' THEN '部門經理'
+      WHEN USER_ROLE = 'C' THEN '客服人員'
+      WHEN USER_ROLE = 'D' THEN '後勤人員'
+      WHEN USER_ROLE = 'E' THEN '主管'
+      WHEN USER_ROLE = 'F' THEN '原廠人員'
+      WHEN USER_ROLE = 'G' THEN 'ARM'
+      WHEN USER_ROLE = 'H' THEN '出納主管'
+      WHEN USER_ROLE = 'I' THEN '信管人員'
+      WHEN USER_ROLE = 'J' THEN '財務長'
+      WHEN USER_ROLE = 'L' THEN '離職'
+      ELSE '一般使用者'
+    END AS USER_ROLE
+FROM 
+  dbo.USERS_TEST
+WHERE 
+  USER_ROLE LIKE '%{{Select_USER_ROLE.filterText}}%'

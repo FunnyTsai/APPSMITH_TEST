@@ -1,0 +1,2 @@
+DELETE FROM dbo.A_VOTE_H_TEST
+  WHERE VOTE_ID = {{data_table.triggeredRow.VOTE_ID}};

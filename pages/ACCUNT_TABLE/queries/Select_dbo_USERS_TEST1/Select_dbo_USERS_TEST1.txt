@@ -1,0 +1,7 @@
+SELECT
+  USER_NAME
+FROM
+  dbo.USERS_TEST
+WHERE
+  USER_NAME LIKE '%{{Select2.filterText}}%'
+	AND USER_ROLE = 'E'

@@ -1,0 +1,21 @@
+UPDATE dbo.USERS_TEST SET 
+	USER_NAME = '{{ Input_USER_NAME.text }}',
+	USER_GROUP = '{{ Select_USER_GROUP.selectedOptionValue }}',
+	USER_ZONE = '{{ Select_USER_ZONE.selectedOptionValue }}',
+	USER_BOSS = '{{ Input_USER_BOSS.text }}',
+	--ROLE
+	TEAM = '{{ Input_USER_TEAM.text }}',
+	USER_MOBILE = '{{ Input_USER_MOBILE.text }}',
+	USER_TEL = '{{ Input_USER_TEL.text }}',
+	USER_FAX = '{{ Input_USER_FAX.text }}',
+	USER_MAIL = '{{ Input_USER_MAIL.text }}',
+	MAIL = '{{ Select_MAIL.selectedOptionValue }}',
+	SALESREP_ID = '{{ Input_SALESREP_ID.text }}',
+	COLLECTOR_ID = '{{ Input_COLLECTOR_ID.text }}',
+	ORD_AMT = '{{ Select_ORD_AMT.selectedOptionValue }}',
+	ORD_DIS_AMT = '{{ Select_ORD_DIS_AMT.selectedOptionValue }}',
+	USER_SCHEDULE = '{{ Select_USER_SCHEDULE.selectedOptionValue }}',
+	--ORG_ID
+	--Input_TRF_FEE
+	--Input_MEAL_FEE
+WHERE USER_ID = {{ appsmith.store.USER_ID }}

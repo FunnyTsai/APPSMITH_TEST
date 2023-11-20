@@ -1,0 +1,5 @@
+SELECT * FROM dbo.A_VOTE_H_TEST
+WHERE CREATE_DATE like '%{{data_table.searchText || ""}}%'
+ORDER BY {{data_table.sortOrder.column || 'VOTE_ID'}} {{data_table.sortOrder.order || "ASC"}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}} ROWS
+FETCH NEXT {{data_table.pageSize}} ROWS ONLY;

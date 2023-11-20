@@ -1,0 +1,26 @@
+INSERT INTO dbo.USERS_TEST (
+	USER_NAME,
+	USER_ID,
+	USER_GROUP,
+	USER_ZONE,
+	USER_BOSS,
+	--USER_ROLE,
+	ORIG_VENDOR,
+	--MAIL
+	--SALESREP_ID,
+	--COLLECTOR_ID
+	--ORD_AMT,
+	--ORD_DIS_AMT,
+	--USER_SCHEDULE,
+	--ORG_ID,
+	--MEAL_FEE,
+	--TRF_FEE
+)
+VALUES (
+	'{{Input_USER_NAME.text}}',
+	'{{Input_USER_ID.text}}',
+	'{{Select_USER_GROUP.selectedOptionValue}}',
+	'{{Select_USER_ZONE.selectedOptionValue}}',
+	'{{Input_USER_BOSS.text}}',
+	'{{Input_USER_ORG.text}}'
+);

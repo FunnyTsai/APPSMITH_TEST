@@ -1,0 +1,7 @@
+SELECT UT1.*, UT2.USER_NAME AS BOSS_NAME FROM dbo.USERS_TEST UT1
+LEFT JOIN USERS_TEST UT2 ON UT1.USER_BOSS = UT2.USER_ID
+WHERE UT1.USER_ID like '%{{data_table.searchText || ""}}%'
+AND UT1.ORG_ID = 84
+ORDER BY {{data_table.sortOrder.column || 'USER_NAME'}} {{data_table.sortOrder.order || "ASC"}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}} ROWS
+FETCH NEXT {{data_table.pageSize}} ROWS ONLY;

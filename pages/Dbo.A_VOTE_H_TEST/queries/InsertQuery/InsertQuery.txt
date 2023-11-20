@@ -1,0 +1,28 @@
+INSERT INTO dbo.A_VOTE_H_TEST (
+	VOTE_ID,
+	CREATE_DATE,
+	VOTE_DATE,
+	TITLE,
+	TITLE_DESC,
+	USE_GROUP,
+	START_DATE,
+	END_DATE,
+	MODIFY_FLAG,
+	CREATE_BY,
+	LAST_UPDATE_BY,
+	LAST_UPDATE_DATE
+)
+VALUES (
+	'{{insert_form.formData.VOTE_ID}}',
+	'{{insert_form.formData.CREATE_DATE}}',
+	'{{insert_form.formData.VOTE_DATE}}',
+	'{{insert_form.formData.TITLE}}',
+	'{{insert_form.formData.TITLE_DESC}}',
+	'{{insert_form.formData.USE_GROUP}}',
+	'{{insert_form.formData.START_DATE}}',
+	'{{insert_form.formData.END_DATE}}',
+	'{{insert_form.formData.MODIFY_FLAG}}',
+	'{{insert_form.formData.CREATE_BY}}',
+	'{{insert_form.formData.LAST_UPDATE_BY}}',
+	'{{insert_form.formData.LAST_UPDATE_DATE}}'
+);

@@ -1,0 +1,6 @@
+SELECT
+  DISTINCT TEAM
+FROM
+  dbo.USERS_TEST
+WHERE
+  TEAM LIKE '%{{Select2Copy.filterText}}%'

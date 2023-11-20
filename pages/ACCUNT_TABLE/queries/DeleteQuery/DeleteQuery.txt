@@ -1,0 +1,2 @@
+DELETE FROM dbo.USERS_TEST
+  WHERE USER_ID = {{data_table.triggeredRow.USER_ID}};
